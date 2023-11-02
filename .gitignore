@@ -1,0 +1,7 @@
+# Ignore the listed files & folders and all their contents.
+__pycache__/
+versions/
+file.json
+.vscode/
+w3c_validator.py
+100-dump.sql
