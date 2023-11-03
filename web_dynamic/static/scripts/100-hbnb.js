@@ -1,7 +1,7 @@
 $(document).ready(function () {
   const api = 'http://' + window.location.hostname;
 
-  $.get(api + ':5001:/api/v1/status/', function (response) {
+  $.get(api + ':5001/api/v1/status/', function (response) {
     if (response.status === 'OK') {
       $('DIV#api_status').addClass('available');
     } else {

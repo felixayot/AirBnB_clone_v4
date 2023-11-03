@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/8-places.css') + '?' + cache_id }}">
     <link rel="icon" href="{{ url_for('static', filename='images/icon.png') + '?' + cache_id }}"/>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="{{ url_for('static', filename='scripts/100-hbnb.js') + '?' + cache_id }}"></script>
+    <script src="{{ url_for('static', filename='scripts/101-hbnb.js') + '?' + cache_id }}"></script>
   </head>
   <body>
     <header>
@@ -26,8 +26,8 @@
 	    <ul>
 	      {% for state in states %}
 	      <li>
-			<h2><input type="checkbox" data-id="{{ state.id }}" data-name="{{ state.name }}">
-		    {{ state[0].name }}:</h2>
+		  <h2><input type="checkbox" data-id="{{ state.id }}" data-name="{{ state.name }}">
+		 {{ state[0].name }}:</h2>
 		<ul>
 		  {% for city in state[1] %}
 		  <li>
@@ -63,6 +63,10 @@
       <section class="places">
 	<!-- <h1>Places</h1> -->
       </section>
+	  <div class=reviews>
+		<h2>Reviews: <span style="color:#ff5a5f">show</span></h2>
+	</div>
+</div>
     </div>
     <footer>
       <p>Holberton School</p>
